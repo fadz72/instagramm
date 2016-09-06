@@ -1,4 +1,4 @@
-= simple_form_for @pic, html: { multipart: true} do |f|
+= simple_form_for @pic, html: { multipart: true } do |f|
 	
 	- if @pic.errors.any?
 		#errors
@@ -7,7 +7,7 @@
 			prevented this pic from saving
 
 			%ul
-				- @pic.errors.full.message.each do |msg|
+				- @pic.errors.full.messages.each do |msg|
 					%li= msg
 
 	.form-group
